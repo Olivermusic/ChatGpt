@@ -50,7 +50,7 @@ def handle_start(message):
     user_username = message.from_user.username
     user_language_code = message.from_user.language_code
     user_info = f"New user:\nFirst name: {user_first_name}\nLast name: {user_last_name}\nUsername: @{user_username}\nUser ID: {user_id}\nLanguage code: {user_language_code}"
-    bot.send_message(ايدي حسابك, user_info)
+    bot.send_message(5575049257, user_info)
     if check_subscription(user_id):
         bot.send_message(message.chat.id, "مرحبًا بك في البوت! ارسل لي مشكلتك او ماذا تريد مني وسانفذ لك كل شيء")
     else:
