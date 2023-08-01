@@ -31,7 +31,7 @@ def gpt(text) -> str:
   return None
 
 bot = telebot.TeleBot("token")
-CHANNEL_ID = '-1001839422803'
+CHANNEL_ID = '-1001670120955'
 
 
 def check_subscription(user_id):
@@ -55,7 +55,7 @@ def handle_start(message):
         bot.send_message(message.chat.id, "مرحبًا بك في البوت! ارسل لي مشكلتك او ماذا تريد مني وسانفذ لك كل شيء")
     else:
         keyboard = types.InlineKeyboardMarkup()
-        url_button = types.InlineKeyboardButton(text="الاشتراك في القناة", url="https://t.me/Z_X_m")
+        url_button = types.InlineKeyboardButton(text="الاشتراك في القناة", url="https://t.me/bsjeijxs")
         keyboard.add(url_button)
         bot.send_message(message.chat.id, "يجب عليك الاشتراك في القناة لاستخدام هذا البوت.", reply_markup=keyboard) 
 
@@ -68,7 +68,7 @@ def handle_message(message):
       bot.send_message(message.chat.id, text)
     else:
         keyboard = types.InlineKeyboardMarkup()
-        url_button = types.InlineKeyboardButton(text="الاشتراك في القناة", url="https://t.me/Z_X_m")
+        url_button = types.InlineKeyboardButton(text="الاشتراك في القناة", url="https://t.me/bsjeijxs")
         keyboard.add(url_button)
         bot.send_message(message.chat.id, "يجب عليك الاشتراك في القناة لاستخدام هذا البوت.", reply_markup=keyboard) 
 
