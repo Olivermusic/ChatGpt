@@ -30,7 +30,7 @@ def gpt(text) -> str:
  except:
   return None
 
-bot = telebot.TeleBot("token")
+bot = telebot.TeleBot("5406001028:AAFJv1aGC1OctO3mtVBkUjrQNYU2h5g01Lc")
 CHANNEL_ID = '-1001670120955'
 
 
