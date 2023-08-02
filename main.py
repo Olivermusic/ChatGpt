@@ -30,8 +30,11 @@ def gpt(text) -> str:
  except:
   return None
 
-bot = telebot.TeleBot("5406001028:AAFJv1aGC1OctO3mtVBkUjrQNYU2h5g01Lc")
-CHANNEL_ID = '-1001670120955'
+idch = os.environ.get("idch")
+userid = os.environ.get("id")
+
+bot = telebot.TeleBot(os.environ.get("token"))
+CHANNEL_ID = idch
 
 
 def check_subscription(user_id):
@@ -50,7 +53,7 @@ def handle_start(message):
     user_username = message.from_user.username
     user_language_code = message.from_user.language_code
     user_info = f"New user:\nFirst name: {user_first_name}\nLast name: {user_last_name}\nUsername: @{user_username}\nUser ID: {user_id}\nLanguage code: {user_language_code}"
-    bot.send_message(5575049257, user_info)
+    bot.send_message(id, user_info)
     if check_subscription(user_id):
         bot.send_message(message.chat.id, "مرحبًا بك في البوت! ارسل لي مشكلتك او ماذا تريد مني وسانفذ لك كل شيء")
     else:
