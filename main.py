@@ -78,3 +78,4 @@ def handle_message(message):
     
 
 bot.infinity_polling()
+print("تم شتغل")
